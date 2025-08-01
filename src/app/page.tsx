@@ -1,95 +1,108 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+import Link from 'next/link';
+import styles from './page.module.css';
 
 export default function Home() {
   return (
     <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol>
-          <li>
-            Get started by editing <code>src/app/page.tsx</code>.
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.secondary}
-          >
-            Read our docs
-          </a>
+      {/* Hero Section */}
+      <section className={`${styles.hero} section`}>
+        <div className="container">
+          <div className={`${styles.heroContent} grid grid-2`}>
+            <div className={styles.heroText}>
+              <h1 className="fade-in-up">AI-Powered Solutions for Tomorrow's Business</h1>
+              <p className={styles.subtext}>
+                MAS Services Group helps organizations achieve results faster with AI-driven software development — proven to be up to 90% more cost-effective than traditional teams.
+              </p>
+              <Link href="/contact" className="btn btn-primary">
+                Schedule a Consultation
+              </Link>
+            </div>
+            <div className={styles.heroImage}>
+              <div className={styles.professionalBox}>
+                <div className={styles.statsGrid}>
+                  <div className={styles.stat}>
+                    <div className={styles.statNumber}>90%</div>
+                    <div className={styles.statLabel}>Cost Reduction</div>
+                  </div>
+                  <div className={styles.stat}>
+                    <div className={styles.statNumber}>Every 2 Weeks</div>
+                    <div className={styles.statLabel}>Delivery Cycles</div>
+                  </div>
+                  <div className={styles.stat}>
+                    <div className={styles.statNumber}>500+</div>
+                    <div className={styles.statLabel}>Projects Delivered</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-      </main>
-      <footer className={styles.footer}>
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+      </section>
+
+      {/* Services Preview */}
+      <section id="services" className={`${styles.servicesPreview} section bg-light-gray`}>
+        <div className="container">
+          <div className="text-center">
+            <h2 style={{color: 'var(--white)', marginBottom: '3rem'}}>AI-Accelerated Development Services</h2>
+          </div>
+          <div className="grid grid-3">
+            <div className="card">
+              <div className={styles.cardContent}>
+                <div className={styles.serviceNumber}>01</div>
+                <h3>Web Applications</h3>
+                <p>Modern web applications delivering responsive, scalable solutions with 2-week delivery cycles.</p>
+                <div className={styles.cardFooter}>
+                  <span>React • Next.js • TypeScript</span>
+                </div>
+                <Link href="/contact" className="btn btn-secondary">
+                  Learn More
+                </Link>
+              </div>
+            </div>
+            <div className="card">
+              <div className={styles.cardContent}>
+                <div className={styles.serviceNumber}>02</div>
+                <h3>Mobile Applications</h3>
+                <p>Cross-platform mobile applications for iOS and Android — built faster with modern frameworks.</p>
+                <div className={styles.cardFooter}>
+                  <span>React Native • Flutter • Swift</span>
+                </div>
+                <Link href="/contact" className="btn btn-secondary">
+                  Learn More
+                </Link>
+              </div>
+            </div>
+            <div className="card">
+              <div className={styles.cardContent}>
+                <div className={styles.serviceNumber}>03</div>
+                <h3>Bitcoin Smart Contracts</h3>
+                <p>Secure blockchain smart contracts on Bitcoin using Clarity — efficient development and comprehensive testing.</p>
+                <div className={styles.cardFooter}>
+                  <span>Clarity • Bitcoin • Blockchain</span>
+                </div>
+                <Link href="/contact" className="btn btn-secondary">
+                  Learn More
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* About Section */}
+      <section className={`${styles.aboutSection} section`}>
+        <div className="container text-center">
+          <h2>Why Choose MAS Services Group?</h2>
+          <p className={styles.aboutText}>
+            We combine AI innovation with proven expertise to deliver solutions that scale. Our approach ensures measurable outcomes without the overhead of traditional development teams.
+          </p>
+          <Link href="/about" className="btn btn-secondary">
+            Learn More About Us
+          </Link>
+        </div>
+      </section>
+
+
     </div>
   );
 }

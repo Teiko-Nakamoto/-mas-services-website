@@ -1,0 +1,206 @@
+.page {
+  min-height: 100vh;
+}
+
+/* Hero Section */
+.hero {
+  padding: 5rem 0;
+  background: linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-secondary) 100%);
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  color: var(--text-primary);
+}
+
+.missionText {
+  font-size: 1.25rem;
+  max-width: 800px;
+  margin: 0 auto;
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+/* Why MAS Section */
+.whyMas {
+  padding: 5rem 0;
+}
+
+.whyMas h2 {
+  margin-bottom: 1rem;
+}
+
+.whyMasSubtext {
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+  max-width: 600px;
+  margin: 0 auto 3rem;
+}
+
+.reasonsGrid {
+  margin-top: 3rem;
+}
+
+.reason {
+  text-align: center;
+  padding: 2.5rem 2rem;
+  background: var(--bg-tertiary);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid var(--border-color);
+}
+
+.reason:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(77, 168, 218, 0.3);
+  border-color: var(--secondary-blue);
+}
+
+.reasonIcon {
+  font-size: 3.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.reason h3 {
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.reason > p {
+  color: var(--secondary-blue);
+  font-weight: 600;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+.reasonDetails p {
+  color: var(--text-secondary);
+  line-height: 1.6;
+  font-weight: 400;
+}
+
+/* Our Approach Section */
+.approach {
+  padding: 5rem 0;
+}
+
+.approach h2 {
+  margin-bottom: 1rem;
+}
+
+.approachSubtext {
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+  max-width: 700px;
+  margin: 0 auto 3rem;
+}
+
+.processGrid {
+  margin-top: 3rem;
+  gap: 3rem;
+}
+
+.processStep {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 2rem;
+  background: var(--bg-secondary);
+  border-radius: 12px;
+  position: relative;
+  border: 1px solid var(--border-color);
+}
+
+.stepNumber {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--secondary-blue);
+  font-family: var(--font-heading);
+}
+
+.processStep h4 {
+  color: var(--text-primary);
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.processStep p {
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+/* CTA Section */
+.cta {
+  padding: 4rem 0;
+}
+
+.cta h2 {
+  margin-bottom: 1rem;
+}
+
+.ctaText {
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 0 auto 2rem;
+  opacity: 0.9;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+  
+  .missionText {
+    font-size: 1.1rem;
+  }
+  
+  .reason {
+    padding: 2rem 1.5rem;
+  }
+  
+  .reasonIcon {
+    font-size: 3rem;
+  }
+  
+  .processGrid {
+    gap: 2rem;
+  }
+  
+  .processStep {
+    padding: 1.5rem;
+  }
+  
+  .stepNumber {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    padding: 4rem 0;
+  }
+  
+  .hero h1 {
+    font-size: 2rem;
+  }
+  
+  .missionText {
+    font-size: 1rem;
+  }
+  
+  .reason {
+    padding: 1.5rem 1rem;
+  }
+  
+  .reasonIcon {
+    font-size: 2.5rem;
+  }
+  
+  .processStep {
+    padding: 1rem;
+  }
+}
