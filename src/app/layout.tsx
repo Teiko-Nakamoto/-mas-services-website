@@ -17,8 +17,13 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "MAS Services Group - AI-Powered Solutions for Tomorrow's Business",
+  title: "MAS Services Group",
   description: "MAS Services Group helps organizations achieve results faster with AI-driven software development — proven to be up to 90% more cost-effective than traditional teams.",
+  icons: {
+    icon: "/mas service logo.png",
+    shortcut: "/mas service logo.png",
+    apple: "/mas service logo.png",
+  },
 };
 
 export default function RootLayout({

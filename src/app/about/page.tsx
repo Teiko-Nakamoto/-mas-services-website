@@ -2,7 +2,7 @@ import Link from 'next/link';
 import styles from './page.module.css';
 
 export const metadata = {
-  title: 'About Us - MAS Services Group',
+  title: 'MAS Services Group - About',
   description: 'Built on Trust. Driven by Innovation. MAS Services Group harnesses the power of artificial intelligence to make businesses smarter, faster, and more efficient.',
 };
 
