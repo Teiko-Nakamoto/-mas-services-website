@@ -1,9 +1,6 @@
-import Link from 'next/link';
+'use client';
 
-export const metadata = {
-  title: 'Our Services - MAS Services Group',
-  description: 'Discover our AI-accelerated development services. Contact us to learn more about our solutions.',
-};
+import Link from 'next/link';
 
 export default function Services() {
   return (
